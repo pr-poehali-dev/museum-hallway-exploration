@@ -111,3 +111,17 @@
     font-family: "Cormorant", serif;
   }
 }
+
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .hover-scale {
+    @apply transition-transform duration-300;
+  }
+
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
+}
